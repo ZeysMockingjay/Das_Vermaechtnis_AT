@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cf36hr8rhmbdo"]
+
+[ext_resource type="Texture2D" uid="uid://dvt1idyuor4uo" path="res://Assets/Textures/TestBorders.png" id="1_tvens"]
+[ext_resource type="Texture2D" uid="uid://dljpvsoc5jf60" path="res://Assets/Textures/TestBordersFull.png" id="2_evhkv"]
+[ext_resource type="Script" path="res://OverlayImageFull.gd" id="3_w6uo6"]
+
+[node name="TestLevel" type="Node2D"]
+
+[node name="OverlayTest" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="OverlayImage" type="Sprite2D" parent="OverlayTest"]
+texture = ExtResource("1_tvens")
+centered = false
+
+[node name="OverlayImageFull" type="Sprite2D" parent="OverlayTest"]
+texture = ExtResource("2_evhkv")
+centered = false
+script = ExtResource("3_w6uo6")
