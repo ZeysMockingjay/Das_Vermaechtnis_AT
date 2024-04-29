@@ -1,9 +1,11 @@
-[gd_scene load_steps=23 format=3 uid="uid://cf36hr8rhmbdo"]
+[gd_scene load_steps=27 format=3 uid="uid://cf36hr8rhmbdo"]
 
 [ext_resource type="Script" path="res://test_level.gd" id="1_7g10w"]
 [ext_resource type="Texture2D" uid="uid://f0fa1e1mlt7f" path="res://Assets/Textures/TestBorders.png" id="1_tvens"]
 [ext_resource type="Script" path="res://Camera2D.gd" id="2_1t336"]
+[ext_resource type="Texture2D" uid="uid://rtqqxm2o3sv4" path="res://Assets/Textures/Guidance.png" id="2_eacld"]
 [ext_resource type="Texture2D" uid="uid://bt1ljsqsdiq2c" path="res://Assets/Textures/TestBordersFull.png" id="2_evhkv"]
+[ext_resource type="Script" path="res://Sprite2D.gd" id="3_dlk0p"]
 [ext_resource type="Script" path="res://OverlayImageFull.gd" id="3_w6uo6"]
 [ext_resource type="Texture2D" uid="uid://7ntbg6yki4th" path="res://Assets/Textures/ParalaxTest/Layer1.png" id="4_df7qj"]
 [ext_resource type="Texture2D" uid="uid://nfxo6fuj7g7u" path="res://Assets/Textures/ParalaxTest/Layer4.png" id="4_nt36v"]
@@ -12,6 +14,7 @@
 [ext_resource type="Script" path="res://Player.gd" id="8_hiekp"]
 [ext_resource type="Texture2D" uid="uid://88ej03j28cna" path="res://Assets/Textures/Unbenanntdudeanim.png" id="8_vh8gm"]
 [ext_resource type="Texture2D" uid="uid://l5wg4fc606bh" path="res://Assets/Textures/Boden.png" id="9_m78ck"]
+[ext_resource type="Script" path="res://Area2DMap1.gd" id="15_8w1ep"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l5nrw"]
 size = Vector2(14, 45)
@@ -77,8 +80,19 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h3213"]
 size = Vector2(1000, 12)
 
-[node name="TestLevel" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gcaqk"]
+size = Vector2(26, 61)
+
+[node name="Welt1" type="Node2D"]
 script = ExtResource("1_7g10w")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+visible = false
+texture = ExtResource("2_eacld")
+centered = false
+script = ExtResource("3_dlk0p")
 
 [node name="OverlayTest" type="CanvasLayer" parent="."]
 layer = 10
@@ -165,3 +179,13 @@ texture = ExtResource("9_m78ck")
 [node name="Collision" type="CollisionShape2D" parent="Boden"]
 position = Vector2(0, -52)
 shape = SubResource("RectangleShape2D_h3213")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("15_8w1ep")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(378, 102.5)
+shape = SubResource("RectangleShape2D_gcaqk")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
