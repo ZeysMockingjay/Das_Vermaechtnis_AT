@@ -17,8 +17,8 @@ func new_game():
 
 # No longer modifying the player's or camera's position in _process
 
-#Testyo Walter White yo
-#huh
+#Testyo Walter White yo yo
+
 # (For scrolling ground in the train level?)
 # if $Camera2D.position.x - $Boden.position.x > get_window().size.x * 1.5:
 #    $Boden.position.x += get_window().size.x  # Reset ground position
