@@ -19,6 +19,8 @@ func new_game():
 
 #Testyo Walter White yo yo nochmal yo
 
+#Testyo Walter White yo
+#huh
 # (For scrolling ground in the train level?)
 # if $Camera2D.position.x - $Boden.position.x > get_window().size.x * 1.5:
 #    $Boden.position.x += get_window().size.x  # Reset ground position
