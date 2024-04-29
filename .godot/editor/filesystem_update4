@@ -1,6 +1,3 @@
-res://test_level.tscn
-res://test_level.gd
-res://Sprite2D.gd
 res://Test_level_levelchangetest.tscn
-res://Area2DMap1.gd
-res://Area2DWelt2.gd
+res://test_level.gd
+res://test_level.tscn
