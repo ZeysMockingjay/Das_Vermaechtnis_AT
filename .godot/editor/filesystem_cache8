@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714425476
+::res://::1714438275
 Area2DMap1.gd::GDScript::-1::1714416404::0::1::::<>Area2D<>::
 Area2DWelt2.gd::GDScript::-1::1714416404::0::1::::<>Area2D<>::
 Camera2D.gd::GDScript::-1::1714316819::0::1::::<>Camera2D<>::
@@ -8,9 +8,9 @@ OverlayImageFull.gd::GDScript::-1::1714082190::0::1::::<>Sprite2D<>::
 Player.gd::GDScript::-1::1714395412::0::1::::<>CharacterBody2D<>::
 Screenshot 2024-04-28 182948.png::CompressedTexture2D::1464524810360643779::1714395160::1714395162::1::::<><>::
 Sprite2D.gd::GDScript::-1::1714399128::0::1::::<>Sprite2D<>::
-test_level.gd::GDScript::-1::1714396229::0::1::::<>Node2D<>::
-test_level.tscn::PackedScene::5183483834680860072::1714416427::0::1::::<><>::res://test_level.gd<>uid://f0fa1e1mlt7f::::res://Assets/Textures/TestBorders.png<>res://Camera2D.gd<>uid://rtqqxm2o3sv4::::res://Assets/Textures/Guidance.png<>uid://bt1ljsqsdiq2c::::res://Assets/Textures/TestBordersFull.png<>res://Sprite2D.gd<>res://OverlayImageFull.gd<>uid://7ntbg6yki4th::::res://Assets/Textures/ParalaxTest/Layer1.png<>uid://nfxo6fuj7g7u::::res://Assets/Textures/ParalaxTest/Layer4.png<>uid://d31sl1hrrdfv::::res://Assets/Textures/ParalaxTest/Layer3.png<>uid://datbcmqke2p8q::::res://Assets/Textures/ParalaxTest/Layer2.png<>res://Player.gd<>uid://88ej03j28cna::::res://Assets/Textures/Unbenanntdudeanim.png<>uid://l5wg4fc606bh::::res://Assets/Textures/Boden.png<>res://Area2DMap1.gd
-Test_level_levelchangetest.tscn::PackedScene::5105901657526506535::1714416726::0::1::::<><>::uid://l5wg4fc606bh::::res://Assets/Textures/Boden.png<>uid://u4orlfs307q2::::res://Screenshot 2024-04-28 182948.png<>res://Player.gd<>res://Camera2D.gd<>uid://88ej03j28cna::::res://Assets/Textures/Unbenanntdudeanim.png<>res://Area2DWelt2.gd
+test_level.gd::GDScript::-1::1714438271::0::1::::<>Node2D<>::
+test_level.tscn::PackedScene::5183483834680860072::1714438271::0::1::::<><>::res://test_level.gd<>uid://f0fa1e1mlt7f::::res://Assets/Textures/TestBorders.png<>res://Camera2D.gd<>uid://rtqqxm2o3sv4::::res://Assets/Textures/Guidance.png<>uid://bt1ljsqsdiq2c::::res://Assets/Textures/TestBordersFull.png<>res://Sprite2D.gd<>res://OverlayImageFull.gd<>uid://7ntbg6yki4th::::res://Assets/Textures/ParalaxTest/Layer1.png<>uid://nfxo6fuj7g7u::::res://Assets/Textures/ParalaxTest/Layer4.png<>uid://d31sl1hrrdfv::::res://Assets/Textures/ParalaxTest/Layer3.png<>uid://datbcmqke2p8q::::res://Assets/Textures/ParalaxTest/Layer2.png<>res://Player.gd<>uid://88ej03j28cna::::res://Assets/Textures/Unbenanntdudeanim.png<>uid://l5wg4fc606bh::::res://Assets/Textures/Boden.png<>res://Area2DMap1.gd
+Test_level_levelchangetest.tscn::PackedScene::5105901657526506535::1714438271::0::1::::<><>::uid://l5wg4fc606bh::::res://Assets/Textures/Boden.png<>uid://u4orlfs307q2::::res://Screenshot 2024-04-28 182948.png<>res://Player.gd<>res://Camera2D.gd<>uid://88ej03j28cna::::res://Assets/Textures/Unbenanntdudeanim.png<>res://Area2DWelt2.gd
 ::res://addons/::1714395587
 ::res://addons/smoothing/::1714395587
 plugin.cfg::TextFile::-1::1714311189::0::1::::<><>::
