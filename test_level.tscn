@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://cf36hr8rhmbdo"]
+[gd_scene load_steps=35 format=3 uid="uid://cf36hr8rhmbdo"]
 
 [ext_resource type="Script" path="res://test_level.gd" id="1_7g10w"]
 [ext_resource type="Texture2D" uid="uid://f0fa1e1mlt7f" path="res://Assets/Textures/TestBorders.png" id="1_tvens"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" path="res://Player.gd" id="8_hiekp"]
 [ext_resource type="Texture2D" uid="uid://88ej03j28cna" path="res://Assets/Textures/Unbenanntdudeanim.png" id="8_vh8gm"]
 [ext_resource type="Texture2D" uid="uid://l5wg4fc606bh" path="res://Assets/Textures/Boden.png" id="9_m78ck"]
+[ext_resource type="Texture2D" uid="uid://dcoegsn3uwx4" path="res://Assets/Textures/Character Animation/Spritesheet_Test.png" id="13_teo3q"]
 [ext_resource type="Script" path="res://Area2DMap1.gd" id="15_8w1ep"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l5nrw"]
@@ -22,13 +23,33 @@ size = Vector2(14, 45)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0ntgn"]
 size = Vector2(17, 45)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_pr7sx"]
-atlas = ExtResource("8_vh8gm")
-region = Rect2(0, 58, 30, 58)
+[sub_resource type="AtlasTexture" id="AtlasTexture_gwihh"]
+atlas = ExtResource("13_teo3q")
+region = Rect2(0, 0, 22, 56)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_iea6k"]
-atlas = ExtResource("8_vh8gm")
-region = Rect2(30, 58, 30, 58)
+[sub_resource type="AtlasTexture" id="AtlasTexture_agn0d"]
+atlas = ExtResource("13_teo3q")
+region = Rect2(22, 0, 22, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j71e6"]
+atlas = ExtResource("13_teo3q")
+region = Rect2(44, 0, 22, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecj10"]
+atlas = ExtResource("13_teo3q")
+region = Rect2(66, 0, 22, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnla4"]
+atlas = ExtResource("13_teo3q")
+region = Rect2(88, 0, 22, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54235"]
+atlas = ExtResource("13_teo3q")
+region = Rect2(110, 0, 22, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_divv8"]
+atlas = ExtResource("13_teo3q")
+region = Rect2(132, 0, 22, 56)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sy0ot"]
 atlas = ExtResource("8_vh8gm")
@@ -50,13 +71,33 @@ region = Rect2(120, 58, 30, 58)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_pr7sx")
+"texture": SubResource("AtlasTexture_gwihh")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_iea6k")
+"texture": SubResource("AtlasTexture_agn0d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j71e6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ecj10")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnla4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54235")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_divv8")
 }],
 "loop": true,
 "name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
 "speed": 5.0
 }, {
 "frames": [{
@@ -173,7 +214,7 @@ position = Vector2(0, -7.62939e-06)
 sprite_frames = SubResource("SpriteFrames_0k80n")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.964596
+frame_progress = 0.034225
 flip_h = true
 
 [node name="Boden" type="StaticBody2D" parent="."]
