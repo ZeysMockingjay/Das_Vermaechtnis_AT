@@ -2,6 +2,8 @@ extends CharacterBody2D
 
 const GRAVITY : int = 500
 
+@onready var animated_sprite = $AnimatedSprite2D
+
 func _physics_process(delta: float) -> void:
 	velocity.y += GRAVITY * delta  # Apply gravity
 
@@ -11,8 +13,12 @@ func _physics_process(delta: float) -> void:
 	# Handle horizontal movement input
 	if Input.is_action_pressed("playermoveright"):
 		velocity.x = 100  # Set horizontal speed for moving right
+		animated_sprite.flip_h = false
 	elif Input.is_action_pressed("playermoveleft"):
 		velocity.x = -100  # Set horizontal speed for moving left
+		animated_sprite.flip_h = true
+
+
 
 	# Move and slide, no arguments needed
 	move_and_slide()
@@ -23,3 +29,4 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.play("idle")  # Play idle animation if there's no effective horizontal movement or if stuck on a wall
 		else:
 			$AnimatedSprite2D.play("run")  # Play running animation if moving horizontally
+
