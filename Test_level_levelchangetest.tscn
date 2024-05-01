@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://ce0lppgrmebt4"]
+[gd_scene load_steps=20 format=3 uid="uid://ce0lppgrmebt4"]
 
 [ext_resource type="Texture2D" uid="uid://l5wg4fc606bh" path="res://Assets/Textures/Boden.png" id="1_15c8h"]
 [ext_resource type="Texture2D" uid="uid://u4orlfs307q2" path="res://Screenshot 2024-04-28 182948.png" id="2_q6ifp"]
@@ -74,6 +74,12 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m81ho"]
 size = Vector2(25, 48)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xqwwn"]
+size = Vector2(11, 91)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kcvwj"]
+size = Vector2(10, 134)
+
 [node name="Welt2" type="Node2D"]
 
 [node name="Boden" type="StaticBody2D" parent="."]
@@ -102,7 +108,7 @@ position = Vector2(119, -26)
 offset = Vector2(-112, 0)
 process_callback = 0
 limit_left = 110
-limit_right = 560
+limit_right = 520
 limit_bottom = 200
 limit_smoothed = true
 position_smoothing_enabled = true
@@ -128,5 +134,16 @@ autoplay = "idle"
 script = ExtResource("6_81ixl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DWelt2"]
-position = Vector2(214, 110)
+position = Vector2(322, 110)
 shape = SubResource("RectangleShape2D_m81ho")
+
+[node name="MapEnde" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="MapEnde"]
+position = Vector2(403, 88)
+rotation = -3.14159
+shape = SubResource("RectangleShape2D_xqwwn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapEnde"]
+position = Vector2(-6, 67)
+shape = SubResource("RectangleShape2D_kcvwj")
