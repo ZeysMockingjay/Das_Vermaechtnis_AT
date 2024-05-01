@@ -1,7 +1,7 @@
 extends Node2D
 
 # Game variables
-const PLAYER_START_POS : Vector2 = Vector2(17, 106)
+const PLAYER_START_POS : Vector2 = Vector2(100, 106)
 #TESTconst CAM_START_POS : Vector2 = Vector2(136, 77)
 
 # Called when the node enters the scene tree for the first time.
