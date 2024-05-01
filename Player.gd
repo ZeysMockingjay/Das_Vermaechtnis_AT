@@ -16,10 +16,11 @@ func _physics_process(delta):
 
 	# Update animation based on current velocity state
 	if is_on_floor():
+		if velocity.x == 0:
+			$AnimatedSprite2D.play("idle")
 		if velocity.x != 0:
 			$AnimatedSprite2D.play("run")  # Play running animation if moving horizontally
-		else:
-			$AnimatedSprite2D.play("idle")  # Play idle animation if not moving horizontally
+		
 
 	# Execute the movement
 	move_and_slide()
