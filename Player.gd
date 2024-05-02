@@ -18,7 +18,9 @@ func _physics_process(delta: float) -> void:
 		velocity.x = -100  # Set horizontal speed for moving left
 		animated_sprite.flip_h = true
 
-
+	# Quit game if the 'closegame' action is pressed
+	if Input.is_action_pressed("closegame"):
+		get_tree().quit()
 
 	# Move and slide, no arguments needed
 	move_and_slide()
@@ -26,7 +28,6 @@ func _physics_process(delta: float) -> void:
 	# Check if the player is on the floor and update animations based on actual movement
 	if is_on_floor():
 		if velocity.x == 0 or (velocity.x != 0 and is_on_wall()):
-			$AnimatedSprite2D.play("idle")  # Play idle animation if there's no effective horizontal movement or if stuck on a wall
+			animated_sprite.play("idle")  # Play idle animation if there's no effective horizontal movement or if stuck on a wall
 		else:
-			$AnimatedSprite2D.play("run")  # Play running animation if moving horizontally
-
+			animated_sprite.play("run")  # Play running animation if moving horizontally
