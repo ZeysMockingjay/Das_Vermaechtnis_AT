@@ -8,9 +8,8 @@ class_name Door
 
 @onready var spawn = $Spawn
 
-
 func _on_Area2D_body_entered(body: CharacterBody2D):
 	if body is Player1:
+		print("test")  # This will print "test" when a Player1 enters the Area2D
 		NavigationManager.go_to_level(destination_level_tag, destination_door_tag)
-		
-
+#HIER MUSS DER FEHLER LIEGEN!
