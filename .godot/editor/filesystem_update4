@@ -1,12 +1,7 @@
 res://test_level.tscn
-res://test_level.gd
+res://door.gd
+res://transition_screen.tscn
 res://Test_level_levelchangetest.tscn
 res://player_1.tscn
-res://transition_screen.tscn
-res://transition_screen.gd
-res://Area2DMap1.gd
-res://Assets/door.tscn
 res://door.tscn
-res://door.gd
-res://Player.gd
-res://navigation_manager.gd
+res://test_level.gd
