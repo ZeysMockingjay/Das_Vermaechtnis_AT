@@ -15,6 +15,13 @@ run/main_scene="res://test_level.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+NavigationManager="*res://navigation_manager.gd"
+TransitionScreen="*res://transition_screen.tscn"
+Area2dMap1="*res://Area2DMap1.gd"
+Area2dWelt2="*res://Area2DWelt2.gd"
+
 [display]
 
 window/size/viewport_width=272

@@ -1,8 +1,16 @@
 extends CharacterBody2D
 
+class_name Player1
+
 const GRAVITY : int = 500
 
 @onready var animated_sprite = $AnimatedSprite2D
+
+func _ready():
+	NavigationManager.on_trigger_player_spawn.connect(_on_spawn)
+	
+func _on_spawn(position: Vector2, direction: String):
+	global_position = position
 
 func _physics_process(delta: float) -> void:
 	velocity.y += GRAVITY * delta  # Apply gravity
