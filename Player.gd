@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-class_name Player1
+class_name Player
 
 const GRAVITY : int = 500
 

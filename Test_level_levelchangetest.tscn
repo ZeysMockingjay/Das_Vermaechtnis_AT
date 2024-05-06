@@ -59,11 +59,11 @@ shape = SubResource("RectangleShape2D_kcvwj")
 
 [node name="Doors" type="Node" parent="."]
 
-[node name="Greek_1" parent="Doors" instance=ExtResource("5_d367d")]
+[node name="Door_2" parent="Doors" instance=ExtResource("5_d367d")]
 destination_level_tag = "test_level"
-destination_door_tag = "Door_Greek"
+destination_door_tag = "Door_1"
 
-[node name="CollisionShape2D" parent="Doors/Greek_1" index="0"]
-position = Vector2(295, 123)
+[node name="CollisionShape2D" parent="Doors/Door_2" index="0"]
+position = Vector2(291, 113)
 
-[editable path="Doors/Greek_1"]
+[editable path="Doors/Door_2"]

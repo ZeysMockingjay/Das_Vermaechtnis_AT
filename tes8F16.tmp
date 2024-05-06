@@ -119,16 +119,16 @@ shape = SubResource("RectangleShape2D_4o1sg")
 
 [node name="Doors" type="Node" parent="."]
 
-[node name="Door_1" parent="Doors" instance=ExtResource("14_6o80u")]
+[node name="Door_Greek" parent="Doors" instance=ExtResource("14_6o80u")]
 position = Vector2(376, 123)
 destination_level_tag = "Test_level_levelchangetest"
-destination_door_tag = "Door_2"
+destination_door_tag = "Greek_1"
 spawn_direction = "left"
 
-[node name="CollisionShape2D" parent="Doors/Door_1" index="0"]
-position = Vector2(0, -10)
+[node name="Spawn" parent="Doors/Door_Greek/CollisionShape2D" index="0"]
+position = Vector2(1, 0)
 
 [connection signal="body_entered" from="Portal" to="Portal" method="_on_body_entered"]
 [connection signal="body_exited" from="Portal" to="Portal" method="_on_body_exited"]
 
-[editable path="Doors/Door_1"]
+[editable path="Doors/Door_Greek"]
