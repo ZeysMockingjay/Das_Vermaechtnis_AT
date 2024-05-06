@@ -17,13 +17,13 @@ func _physics_process(delta: float) -> void:
 
 	# Reset horizontal velocity before checking input
 	velocity.x = 0
-
+#----------------SPIELER LAUF GESCHWIDNIGKEIT---------------
 	# Handle horizontal movement input
 	if Input.is_action_pressed("playermoveright"):
-		velocity.x = 100  # Set horizontal speed for moving right
+		velocity.x = 45  # Set horizontal speed for moving right
 		animated_sprite.flip_h = false
 	elif Input.is_action_pressed("playermoveleft"):
-		velocity.x = -100  # Set horizontal speed for moving left
+		velocity.x = -45  # Set horizontal speed for moving left
 		animated_sprite.flip_h = true
 
 	# Quit game if the 'closegame' action is pressed
