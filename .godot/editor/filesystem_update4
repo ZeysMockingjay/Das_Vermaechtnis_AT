@@ -6,3 +6,5 @@ res://door.tscn
 res://Area2DMap1.gd
 res://Player.gd
 res://door.gd
+res://transition_screen.gd
+res://Area2DWelt2.gd

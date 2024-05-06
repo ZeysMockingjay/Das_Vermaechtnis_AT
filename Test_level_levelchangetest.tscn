@@ -57,13 +57,13 @@ shape = SubResource("RectangleShape2D_xqwwn")
 position = Vector2(-6, 67)
 shape = SubResource("RectangleShape2D_kcvwj")
 
-[node name="Doors" type="Node" parent="."]
+[node name="Doors (OBSOLID)" type="Node" parent="."]
 
-[node name="Door_2" parent="Doors" instance=ExtResource("5_d367d")]
+[node name="Door_2" parent="Doors (OBSOLID)" instance=ExtResource("5_d367d")]
 destination_level_tag = "test_level"
-destination_door_tag = "Door_1"
+destination_door_tag = "1"
 
-[node name="CollisionShape2D" parent="Doors/Door_2" index="0"]
-position = Vector2(291, 113)
+[node name="CollisionShape2D" parent="Doors (OBSOLID)/Door_2" index="0"]
+position = Vector2(291, 108)
 
-[editable path="Doors/Door_2"]
+[editable path="Doors (OBSOLID)/Door_2"]

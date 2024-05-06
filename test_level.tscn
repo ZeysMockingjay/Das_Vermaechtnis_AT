@@ -99,7 +99,6 @@ position = Vector2(0, -52)
 shape = SubResource("RectangleShape2D_h3213")
 
 [node name="Portal" type="Area2D" parent="."]
-visible = false
 script = ExtResource("15_8w1ep")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
@@ -117,18 +116,18 @@ shape = SubResource("RectangleShape2D_jwd2t")
 position = Vector2(-6, 67)
 shape = SubResource("RectangleShape2D_4o1sg")
 
-[node name="Doors" type="Node" parent="."]
+[node name="Doors (OBSOLID)" type="Node" parent="."]
 
-[node name="Door_1" parent="Doors" instance=ExtResource("14_6o80u")]
+[node name="Door_1" parent="Doors (OBSOLID)" instance=ExtResource("14_6o80u")]
 position = Vector2(376, 123)
 destination_level_tag = "Test_level_levelchangetest"
-destination_door_tag = "Door_2"
+destination_door_tag = "2"
 spawn_direction = "left"
 
-[node name="CollisionShape2D" parent="Doors/Door_1" index="0"]
-position = Vector2(0, -10)
+[node name="CollisionShape2D" parent="Doors (OBSOLID)/Door_1" index="0"]
+position = Vector2(0, -15)
 
 [connection signal="body_entered" from="Portal" to="Portal" method="_on_body_entered"]
 [connection signal="body_exited" from="Portal" to="Portal" method="_on_body_exited"]
 
-[editable path="Doors/Door_1"]
+[editable path="Doors (OBSOLID)/Door_1"]

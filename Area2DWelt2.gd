@@ -13,6 +13,8 @@ func _ready():
 	connect("body_entered", Callable(self, "_on_Area2D_body_entered"))
 	connect("body_exited", Callable(self, "_on_Area2D_body_exited"))
 
+
+#PORTAL
 func _physics_process(_delta: float) -> void:
 	if entered:
 		if Input.is_action_just_pressed("ui_accept"):
