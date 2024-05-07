@@ -1,11 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://cf36hr8rhmbdo"]
+[gd_scene load_steps=16 format=3 uid="uid://cf36hr8rhmbdo"]
 
 [ext_resource type="Script" path="res://test_level.gd" id="1_7g10w"]
-[ext_resource type="Texture2D" uid="uid://f0fa1e1mlt7f" path="res://Assets/Textures/TestBorders.png" id="1_tvens"]
 [ext_resource type="Texture2D" uid="uid://rtqqxm2o3sv4" path="res://Assets/Textures/Guidance.png" id="2_eacld"]
-[ext_resource type="Texture2D" uid="uid://bt1ljsqsdiq2c" path="res://Assets/Textures/TestBordersFull.png" id="2_evhkv"]
 [ext_resource type="Script" path="res://Sprite2D.gd" id="3_dlk0p"]
-[ext_resource type="Script" path="res://OverlayImageFull.gd" id="3_w6uo6"]
 [ext_resource type="Texture2D" uid="uid://7ntbg6yki4th" path="res://Assets/Textures/ParalaxTest/Layer1.png" id="4_df7qj"]
 [ext_resource type="Texture2D" uid="uid://nfxo6fuj7g7u" path="res://Assets/Textures/ParalaxTest/Layer4.png" id="4_nt36v"]
 [ext_resource type="Texture2D" uid="uid://d31sl1hrrdfv" path="res://Assets/Textures/ParalaxTest/Layer3.png" id="5_n7vrg"]
@@ -37,19 +34,6 @@ visible = false
 texture = ExtResource("2_eacld")
 centered = false
 script = ExtResource("3_dlk0p")
-
-[node name="OverlayTest" type="CanvasLayer" parent="."]
-layer = 10
-
-[node name="OverlayImage" type="Sprite2D" parent="OverlayTest"]
-texture = ExtResource("1_tvens")
-centered = false
-
-[node name="OverlayImageFull" type="Sprite2D" parent="OverlayTest"]
-visible = false
-texture = ExtResource("2_evhkv")
-centered = false
-script = ExtResource("3_w6uo6")
 
 [node name="Background" type="ParallaxBackground" parent="."]
 

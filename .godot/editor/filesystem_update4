@@ -8,3 +8,4 @@ res://test_level.gd
 res://Portal_lvl2_1.gd
 res://Portal_lvl1_1.gd
 res://transition_screen.gd
+res://overlay_bars.tscn

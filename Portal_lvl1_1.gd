@@ -23,12 +23,12 @@ func _ready() -> void:
 	#var door_path: String = "Doors/Door_" + destination_tag
 	#var door: Door = get_node(door_path) as Door
 	#NavigationManager.trigger_player_spawn(door.spawn.global_position, door.spawn_direction)
-
+	
+	
 func _physics_process(_delta: float) -> void:
 	if entered and Input.is_action_just_pressed("ui_accept"):
 		TransitionScreen.transition()
 		await TransitionScreen.on_animation_finished
-		#hier nen timer? so abstimmen bis zur hälfte der transition.
 		get_tree().change_scene_to_file("res://Test_level_levelchangetest.tscn")
 
 #func _on_transition_finished() -> void:

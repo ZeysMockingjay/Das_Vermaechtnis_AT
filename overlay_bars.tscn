@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfcrobx7wxy0t"]
+
+[ext_resource type="Texture2D" uid="uid://f0fa1e1mlt7f" path="res://Assets/Textures/TestBorders.png" id="1_unols"]
+[ext_resource type="Texture2D" uid="uid://bt1ljsqsdiq2c" path="res://Assets/Textures/TestBordersFull.png" id="2_r85se"]
+
+[sub_resource type="GDScript" id="GDScript_i8nt4"]
+script/source = "extends Sprite2D
+
+
+
+
+func _ready():
+	# Make sure to capture input events
+	Input.set_use_accumulated_input(true)
+
+func _input(event):
+	if event is InputEventKey and event.pressed:
+		if event.keycode == KEY_1:
+			self.visible = !self.visible
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="OverlayBars" type="CanvasLayer"]
+layer = 10
+
+[node name="OverlayImage2" type="Sprite2D" parent="."]
+texture = ExtResource("1_unols")
+centered = false
+
+[node name="OverlayImageFull2" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_r85se")
+centered = false
+script = SubResource("GDScript_i8nt4")
