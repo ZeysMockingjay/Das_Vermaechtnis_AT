@@ -12,8 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://datbcmqke2p8q" path="res://Assets/Textures/ParalaxTest/Layer2.png" id="6_issvb"]
 [ext_resource type="Texture2D" uid="uid://l5wg4fc606bh" path="res://Assets/Textures/Boden.png" id="9_m78ck"]
 [ext_resource type="PackedScene" uid="uid://w2plgveuwqqq" path="res://player_1.tscn" id="11_2k80p"]
+[ext_resource type="Script" path="res://Portal_lvl1_1.gd" id="13_da3h6"]
 [ext_resource type="PackedScene" uid="uid://bj6laiw1fnqdq" path="res://door.tscn" id="14_6o80u"]
-[ext_resource type="Script" path="res://Area2DMap1.gd" id="15_8w1ep"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h3213"]
 size = Vector2(1000, 12)
@@ -99,10 +99,10 @@ position = Vector2(0, -52)
 shape = SubResource("RectangleShape2D_h3213")
 
 [node name="Portal" type="Area2D" parent="."]
-script = ExtResource("15_8w1ep")
+script = ExtResource("13_da3h6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
-position = Vector2(452, 102)
+position = Vector2(98, 103)
 shape = SubResource("RectangleShape2D_gcaqk")
 
 [node name="MapEnde" type="StaticBody2D" parent="."]

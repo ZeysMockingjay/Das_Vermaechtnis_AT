@@ -1,3 +1,5 @@
+#SKRIPT VON WELT 1 NODE
+
 extends Node2D
 
 
@@ -14,16 +16,16 @@ func _ready():
 	connect("body_entered", Callable(self, "_on_Area2D_body_entered"))
 	connect("body_exited", Callable(self, "_on_Area2D_body_exited"))
 	
-	if NavigationManager.spawn_door_tag != null:
-		_on_level_spawn(NavigationManager.spawn_door_tag)
+	#if NavigationManager.spawn_door_tag != null:
+	#	_on_level_spawn(NavigationManager.spawn_door_tag)
 	
 	# Correctly connect signals using Callable
 	
 
-func _on_level_spawn(destination_tag: String):
-	var door_path = "Doors/Door_" + destination_tag
-	var door = get_node(door_path) as Door
-	NavigationManager.trigger_player_spawn(door.spawn.global_position, door.spawn_direction)
+#func _on_level_spawn(destination_tag: String):
+	#var door_path = "Doors/Door_" + destination_tag
+	#var door = get_node(door_path) as Door
+	#NavigationManager.trigger_player_spawn(door.spawn.global_position, door.spawn_direction)
 	
 	 
 

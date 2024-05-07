@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-signal on_transition_finished
+signal on_animation_finished
 
 @onready var color_rect: ColorRect = $ColorRect
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
@@ -11,7 +11,7 @@ func _ready() -> void:
 
 func _on_animation_finished(anim_name: String) -> void:
 	if anim_name == "fade_to_black":
-		emit_signal("on_transition_finished")
+		emit_signal("on_animation_finished")
 		animation_player.play("fade_to_normal")
 	elif anim_name == "fade_to_normal":
 		color_rect.visible = false
