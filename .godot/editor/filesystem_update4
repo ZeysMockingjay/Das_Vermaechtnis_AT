@@ -1,11 +1,1 @@
-res://transition_screen.tscn
-res://test_level.tscn
 res://Test_level_levelchangetest.tscn
-res://player_1.tscn
-res://Area2DWelt2.gd
-res://Area2DMap1.gd
-res://test_level.gd
-res://Portal_lvl2_1.gd
-res://Portal_lvl1_1.gd
-res://transition_screen.gd
-res://overlay_bars.tscn

@@ -103,6 +103,7 @@ shape = SubResource("RectangleShape2D_4o1sg")
 [node name="Doors (OBSOLID)" type="Node" parent="."]
 
 [node name="Door_1" parent="Doors (OBSOLID)" instance=ExtResource("14_6o80u")]
+visible = false
 position = Vector2(376, 123)
 destination_level_tag = "Test_level_levelchangetest"
 destination_door_tag = "2"
