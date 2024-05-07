@@ -30,4 +30,5 @@ func _physics_process(_delta: float) -> void:
 func _on_transition_finished() -> void:
 	print("Transition finished, changing scene now.")
 	get_tree().change_scene("res://Test_level_levelchangetest.tscn")
+	
 

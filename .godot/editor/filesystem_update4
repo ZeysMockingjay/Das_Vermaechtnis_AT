@@ -1,1 +1,5 @@
 res://player_1.tscn
+res://test_level.tscn
+res://transition_screen.tscn
+res://Test_level_levelchangetest.tscn
+res://Area2DMap1.gd

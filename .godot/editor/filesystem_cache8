@@ -1,15 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715032612
+::res://::1715082527
 Area2DMap1.gd::GDScript::-1::1715025207::0::1::::<>Area2D<>::
 Area2DWelt2.gd::GDScript::-1::1715023622::0::1::::<>Area2D<>::
 Camera2D.gd::GDScript::-1::1714316819::0::1::::<>Camera2D<>::
 door.gd::GDScript::-1::1715022105::0::1::::Door<>Area2D<>::
 door.tscn::PackedScene::3082784329092707246::1715023261::0::1::::<><>::res://door.gd
+export_presets.cfg::TextFile::-1::1715032910::0::1::::<><>::
 icon.svg::CompressedTexture2D::7566982525095059713::1714074730::1714074735::1::::<><>::
 navigation_manager.gd::GDScript::-1::1714700973::0::1::::<>Node<>::
 OverlayImageFull.gd::GDScript::-1::1714082190::0::1::::<>Sprite2D<>::
 Player.gd::GDScript::-1::1715027477::0::1::::Player<>CharacterBody2D<>::
-player_1.tscn::PackedScene::1600823505811122976::1715031187::0::1::::<><>::res://Player.gd<>res://Camera2D.gd<>uid://dcoegsn3uwx4::::res://Assets/Textures/Character Animation/Spritesheet_Test.png<>uid://bd7bgk8sfqn2k::::res://Assets/Textures/Character Animation/Walk_Spritesheet_Test.png
+player_1.tscn::PackedScene::1600823505811122976::1715032981::0::1::::<><>::res://Player.gd<>res://Camera2D.gd<>uid://dcoegsn3uwx4::::res://Assets/Textures/Character Animation/Spritesheet_Test.png<>uid://bd7bgk8sfqn2k::::res://Assets/Textures/Character Animation/Walk_Spritesheet_Test.png
 Screenshot 2024-04-28 182948.png::CompressedTexture2D::1464524810360643779::1714395160::1714395162::1::::<><>::
 Sprite2D.gd::GDScript::-1::1714399128::0::1::::<>Sprite2D<>::
 test_level.gd::GDScript::-1::1714734081::0::1::::<>Node2D<>::
