@@ -8,3 +8,4 @@ res://Assets/diary/Dia_UI.gd
 res://Assets/diary/dia_ui.tscn
 res://transition_screen.tscn
 res://overlay_bars.tscn
+res://Assets/diary/dia_ui_slot.tscn

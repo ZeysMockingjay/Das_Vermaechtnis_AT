@@ -1,5 +1,9 @@
-ColorRect
+GridContainer
+GridMap
 Sprite2D
+Panel
+TextureRect
+ColorRect
 Node
 Node2D
 Marker2D
@@ -9,6 +13,3 @@ AnimationPlayer
 CanvasLayer
 StaticBody2D
 ParallaxBackground
-Smoothing2D
-Camera2D
-CharacterBody2D

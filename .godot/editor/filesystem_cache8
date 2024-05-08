@@ -1,24 +1,23 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715200166
+::res://::1715203290
 Camera2D.gd::GDScript::-1::1714316819::0::1::::<>Camera2D<>::
 door.gd::GDScript::-1::1715022105::0::1::::Door<>Area2D<>::
 door.tscn::PackedScene::3082784329092707246::1715023261::0::1::::<><>::res://door.gd
 export_presets.cfg::TextFile::-1::1715032910::0::1::::<><>::
 icon.svg::CompressedTexture2D::7566982525095059713::1714074730::1714074735::1::::<><>::
 navigation_manager.gd::GDScript::-1::1714700973::0::1::::<>Node<>::
-overlay_bars.tscn::PackedScene::7515392304307400349::1715190720::0::1::::<><>::uid://f0fa1e1mlt7f::::res://Assets/Textures/TestBorders.png<>uid://bt1ljsqsdiq2c::::res://Assets/Textures/TestBordersFull.png
+overlay_bars.tscn::PackedScene::7515392304307400349::1715203290::0::1::::<><>::uid://f0fa1e1mlt7f::::res://Assets/Textures/TestBorders.png<>uid://bt1ljsqsdiq2c::::res://Assets/Textures/TestBordersFull.png
 Player.gd::GDScript::-1::1715200082::0::1::::Player<>CharacterBody2D<>::
-player_1.tscn::PackedScene::1600823505811122976::1715200166::0::1::::<><>::res://Player.gd<>res://Camera2D.gd<>uid://dq0uula46bdp3::::res://Assets/diary/playerdia.tres<>uid://dcoegsn3uwx4::::res://Assets/Textures/Character Animation/Spritesheet_Test.png<>uid://bd7bgk8sfqn2k::::res://Assets/Textures/Character Animation/Walk_Spritesheet_Test.png
+player_1.tscn::PackedScene::1600823505811122976::1715203290::0::1::::<><>::res://Player.gd<>res://Camera2D.gd<>uid://dq0uula46bdp3::::res://Assets/diary/playerdia.tres<>uid://dcoegsn3uwx4::::res://Assets/Textures/Character Animation/Spritesheet_Test.png<>uid://bd7bgk8sfqn2k::::res://Assets/Textures/Character Animation/Walk_Spritesheet_Test.png<>uid://cxn013q0crjfk::::res://Assets/diary/dia_ui.tscn
 Portal_lvl1_1.gd::GDScript::-1::1715094256::0::1::::<>Area2D<>::
 Portal_lvl2_1.gd::GDScript::-1::1715103599::0::1::::<>Area2D<>::
-diary.gd::GDScript::-1::1715199831::0::1::::Dia<>Resource<>::
 Screenshot 2024-04-28 182948.png::CompressedTexture2D::1464524810360643779::1714395160::1714395162::1::::<><>::
 Sprite2D.gd::GDScript::-1::1714399128::0::1::::<>Sprite2D<>::
 test_level.gd::GDScript::-1::1715103578::0::1::::<>Node2D<>::
-test_level.tscn::PackedScene::5183483834680860072::1715197904::0::1::::<><>::res://test_level.gd<>uid://rtqqxm2o3sv4::::res://Assets/Textures/Guidance.png<>uid://dfcrobx7wxy0t::::res://overlay_bars.tscn<>res://Sprite2D.gd<>uid://7ntbg6yki4th::::res://Assets/Textures/ParalaxTest/Layer1.png<>uid://nfxo6fuj7g7u::::res://Assets/Textures/ParalaxTest/Layer4.png<>uid://d31sl1hrrdfv::::res://Assets/Textures/ParalaxTest/Layer3.png<>uid://datbcmqke2p8q::::res://Assets/Textures/ParalaxTest/Layer2.png<>uid://l5wg4fc606bh::::res://Assets/Textures/Boden.png<>uid://w2plgveuwqqq::::res://player_1.tscn<>res://Portal_lvl1_1.gd<>uid://bj6laiw1fnqdq::::res://door.tscn
-Test_level_levelchangetest.tscn::PackedScene::5105901657526506535::1715198901::0::1::::<><>::uid://dfcrobx7wxy0t::::res://overlay_bars.tscn<>uid://l5wg4fc606bh::::res://Assets/Textures/Boden.png<>uid://u4orlfs307q2::::res://Screenshot 2024-04-28 182948.png<>uid://w2plgveuwqqq::::res://player_1.tscn<>res://Portal_lvl2_1.gd<>uid://dqddv085v6bgl::::res://Assets/Textures/LevelDesignTextures/column_debug.png<>uid://bj6laiw1fnqdq::::res://door.tscn
+test_level.tscn::PackedScene::5183483834680860072::1715203290::0::1::::<><>::res://test_level.gd<>uid://rtqqxm2o3sv4::::res://Assets/Textures/Guidance.png<>uid://dfcrobx7wxy0t::::res://overlay_bars.tscn<>res://Sprite2D.gd<>uid://7ntbg6yki4th::::res://Assets/Textures/ParalaxTest/Layer1.png<>uid://nfxo6fuj7g7u::::res://Assets/Textures/ParalaxTest/Layer4.png<>uid://d31sl1hrrdfv::::res://Assets/Textures/ParalaxTest/Layer3.png<>uid://datbcmqke2p8q::::res://Assets/Textures/ParalaxTest/Layer2.png<>uid://l5wg4fc606bh::::res://Assets/Textures/Boden.png<>uid://w2plgveuwqqq::::res://player_1.tscn<>res://Portal_lvl1_1.gd<>uid://bj6laiw1fnqdq::::res://door.tscn
+Test_level_levelchangetest.tscn::PackedScene::5105901657526506535::1715203290::0::1::::<><>::uid://dfcrobx7wxy0t::::res://overlay_bars.tscn<>uid://l5wg4fc606bh::::res://Assets/Textures/Boden.png<>uid://u4orlfs307q2::::res://Screenshot 2024-04-28 182948.png<>uid://w2plgveuwqqq::::res://player_1.tscn<>res://Portal_lvl2_1.gd<>uid://dqddv085v6bgl::::res://Assets/Textures/LevelDesignTextures/column_debug.png<>uid://bj6laiw1fnqdq::::res://door.tscn
 transition_screen.gd::GDScript::-1::1715093923::0::1::::<>CanvasLayer<>::
-transition_screen.tscn::PackedScene::6141301288364336912::1715190720::0::1::::<><>::res://transition_screen.gd
+transition_screen.tscn::PackedScene::6141301288364336912::1715203290::0::1::::<><>::res://transition_screen.gd
 ::res://addons/::1714395587
 ::res://addons/smoothing/::1714395587
 plugin.cfg::TextFile::-1::1714311189::0::1::::<><>::
@@ -29,14 +28,17 @@ smoothing_2d.png::CompressedTexture2D::619797969809230044::1714311189::171431119
 smoothing_plugin.gd::GDScript::-1::1714311189::0::1::::<>EditorPlugin<>::
 ::res://Assets/::1715197652
 door.tscn::PackedScene::4799696106613712833::1714698115::0::1::::<><>::
-::res://Assets/diary/::1715200321
+::res://Assets/diary/::1715204473
+diary.gd::GDScript::-1::1715199831::0::1::::Dia<>Resource<>::
 diary_item.gd::GDScript::-1::1715199032::0::1::::DiaItem<>Resource<>::
-playerdia.tres::Resource/Dia::8335143627988691518::1715199992::0::1::::<><>::uid://b1msjs2bcylwh::::res://Assets/diary/hints/column_hint.tres<>res://diary.gd
-Dia_UI.gd::GDScript::-1::1715200321::0::1::::<>Control<>::
+Dia_UI.gd::GDScript::-1::1715200996::0::1::::<>Control<>::
+playerdia.tres::Resource/Dia::8335143627988691518::1715200333::0::1::::<><>::uid://b1msjs2bcylwh::::res://Assets/diary/hints/column_hint.tres<>res://Assets/diary/diary.gd
+dia_ui.tscn::PackedScene::6415587533834324640::1715204457::0::1::::<><>::res://Assets/diary/Dia_UI.gd<>uid://bqfsbwde8vp63::::res://Assets/Textures/diary/Diary_open.png<>uid://b1oxweqgrbpr1::::res://Assets/diary/dia_ui_slot.tscn
+dia_ui_slot.tscn::PackedScene::4241667920243975024::1715204473::0::1::::<><>::uid://2rwt4dtlxpv0::::res://Assets/Textures/diary/Diary_slot.png
 ::res://Assets/diary/hints/::1715199181
 column_hint.tres::Resource/DiaItem::4237213116524687455::1715199181::0::1::::<><>::res://Assets/diary/diary_item.gd<>uid://cn5y1qi3mqu4q::::res://Assets/Textures/LevelDesignTextures/column_hint_debug.png
 ::res://Assets/Sound/::1714074958
-::res://Assets/Textures/::1715198267
+::res://Assets/Textures/::1715202565
 Boden.png::CompressedTexture2D::835356632278933085::1714222754::1714222754::1::::<><>::
 Dummy.png::CompressedTexture2D::1780221865955889857::1714085160::1714085235::1::::<><>::
 Guidance.png::CompressedTexture2D::1233434791581721551::1714399234::1714399238::1::::<><>::
@@ -51,6 +53,9 @@ Idle_3.png::CompressedTexture2D::5749850860306384888::1714602001::1714602846::1:
 Idle_4.png::CompressedTexture2D::3105981453363667220::1714602325::1714602846::1::::<><>::
 Spritesheet_Test.png::CompressedTexture2D::215552811072037379::1715100201::1715100203::1::::<><>::
 Walk_Spritesheet_Test.png::CompressedTexture2D::2663119311530518180::1715100153::1715100156::1::::<><>::
+::res://Assets/Textures/diary/::1715203102
+Diary_open.png::CompressedTexture2D::3520859922710420334::1715202575::1715202577::1::::<><>::
+Diary_slot.png::CompressedTexture2D::1931564432661408039::1715204667::1715204669::1::::<><>::
 ::res://Assets/Textures/LevelchangeTest/::1714399013
 ::res://Assets/Textures/LevelDesignTextures/::1715198310
 column_debug.png::CompressedTexture2D::8288697700654947747::1715198287::1715198310::1::::<><>::

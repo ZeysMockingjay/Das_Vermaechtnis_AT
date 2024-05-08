@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1oxweqgrbpr1"]
+
+[ext_resource type="Texture2D" uid="uid://2rwt4dtlxpv0" path="res://Assets/Textures/diary/Diary_slot.png" id="1_hv17x"]
+
+[node name="dia_UI_slot" type="Panel"]
+custom_minimum_size = Vector2(84, 60)
+offset_left = 96.0
+offset_top = 44.0
+offset_right = 180.0
+offset_bottom = 104.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-96, -44)
+texture = ExtResource("1_hv17x")
+centered = false
