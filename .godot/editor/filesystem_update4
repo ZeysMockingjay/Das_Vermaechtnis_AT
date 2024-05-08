@@ -6,3 +6,5 @@ res://diary.gd
 res://Player.gd
 res://Assets/diary/Dia_UI.gd
 res://Assets/diary/dia_ui.tscn
+res://transition_screen.tscn
+res://overlay_bars.tscn
