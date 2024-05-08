@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DiaItem" load_steps=3 format=3 uid="uid://b1msjs2bcylwh"]
+
+[ext_resource type="Script" path="res://Assets/diary/diary_item.gd" id="1_lklh1"]
+[ext_resource type="Texture2D" uid="uid://cn5y1qi3mqu4q" path="res://Assets/Textures/LevelDesignTextures/column_hint_debug.png" id="2_0tmwy"]
+
+[resource]
+script = ExtResource("1_lklh1")
+name = "column_hint"
+texture = ExtResource("2_0tmwy")

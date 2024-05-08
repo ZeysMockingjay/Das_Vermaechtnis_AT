@@ -1,3 +1,8 @@
-res://Test_level_levelchangetest.tscn
 res://test_level.tscn
-res://diary_item.gd
+res://Test_level_levelchangetest.tscn
+res://player_1.tscn
+res://Assets/diary/diary_item.gd
+res://diary.gd
+res://Player.gd
+res://Assets/diary/Dia_UI.gd
+res://Assets/diary/dia_ui.tscn

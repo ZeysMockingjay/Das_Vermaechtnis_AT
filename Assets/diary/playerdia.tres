@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Dia" load_steps=3 format=3 uid="uid://dq0uula46bdp3"]
+
+[ext_resource type="Resource" uid="uid://b1msjs2bcylwh" path="res://Assets/diary/hints/column_hint.tres" id="1_iexd1"]
+[ext_resource type="Script" path="res://Assets/diary/diary.gd" id="2_l5hw0"]
+
+[resource]
+script = ExtResource("2_l5hw0")
+clues = Array[Resource("res://Assets/diary/diary_item.gd")]([ExtResource("1_iexd1"), null, ExtResource("1_iexd1"), null, null])

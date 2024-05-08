@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://ce0lppgrmebt4"]
+[gd_scene load_steps=12 format=3 uid="uid://ce0lppgrmebt4"]
 
 [ext_resource type="PackedScene" uid="uid://dfcrobx7wxy0t" path="res://overlay_bars.tscn" id="1_2fg7j"]
 [ext_resource type="Texture2D" uid="uid://l5wg4fc606bh" path="res://Assets/Textures/Boden.png" id="1_15c8h"]
 [ext_resource type="Texture2D" uid="uid://u4orlfs307q2" path="res://Screenshot 2024-04-28 182948.png" id="2_q6ifp"]
 [ext_resource type="PackedScene" uid="uid://w2plgveuwqqq" path="res://player_1.tscn" id="4_a0djx"]
 [ext_resource type="Script" path="res://Portal_lvl2_1.gd" id="4_hdnt5"]
+[ext_resource type="Texture2D" uid="uid://dqddv085v6bgl" path="res://Assets/Textures/LevelDesignTextures/column_debug.png" id="5_apw2g"]
 [ext_resource type="PackedScene" uid="uid://bj6laiw1fnqdq" path="res://door.tscn" id="5_d367d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dscnd"]
@@ -38,10 +39,15 @@ shape = SubResource("RectangleShape2D_dscnd")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground"]
+[node name="BackgroundtestImage" type="Sprite2D" parent="ParallaxBackground"]
 position = Vector2(0, -7)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_q6ifp")
+centered = false
+
+[node name="Column" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(150, 25)
+texture = ExtResource("5_apw2g")
 centered = false
 
 [node name="Portal" type="Area2D" parent="."]

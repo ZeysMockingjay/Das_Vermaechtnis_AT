@@ -4,6 +4,7 @@ class_name Player
 
 const GRAVITY : int = 500
 
+@export var dia: Dia
 @onready var animated_sprite = $AnimatedSprite2D
 
 func _ready():
