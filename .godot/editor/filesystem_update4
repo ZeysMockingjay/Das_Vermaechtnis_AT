@@ -8,3 +8,4 @@ res://transition_screen.tscn
 res://Test_level_levelchangetest.tscn
 res://overlay_bars.tscn
 res://Assets/diary/dia_ui_slot.gd
+res://Assets/diary/Dia_UI.gd
