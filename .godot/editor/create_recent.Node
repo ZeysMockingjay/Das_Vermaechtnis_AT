@@ -1,6 +1,7 @@
+Sprite2D
+CanvasLayer
 GridContainer
 GridMap
-Sprite2D
 Panel
 TextureRect
 ColorRect
@@ -10,6 +11,4 @@ Marker2D
 CollisionShape2D
 Area2D
 AnimationPlayer
-CanvasLayer
 StaticBody2D
-ParallaxBackground

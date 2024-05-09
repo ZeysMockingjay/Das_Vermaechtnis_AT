@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b1oxweqgrbpr1" path="res://Assets/diary/dia_ui_slot.tscn" id="3_i5gyx"]
 
 [node name="Dia_UI" type="Control"]
+custom_minimum_size = Vector2(272, 153)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -25,6 +26,7 @@ offset_left = 96.0
 offset_top = 44.0
 offset_right = 182.0
 offset_bottom = 107.0
+columns = 2
 
 [node name="dia_UI_slot2" parent="TextureRect/GridContainer" instance=ExtResource("3_i5gyx")]
 layout_mode = 2

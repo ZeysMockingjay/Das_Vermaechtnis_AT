@@ -1,6 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://cf36hr8rhmbdo"]
+[gd_scene load_steps=18 format=3 uid="uid://cf36hr8rhmbdo"]
 
 [ext_resource type="Script" path="res://test_level.gd" id="1_7g10w"]
+[ext_resource type="PackedScene" uid="uid://cxn013q0crjfk" path="res://Assets/diary/dia_ui.tscn" id="2_di8bu"]
 [ext_resource type="Texture2D" uid="uid://rtqqxm2o3sv4" path="res://Assets/Textures/Guidance.png" id="2_eacld"]
 [ext_resource type="PackedScene" uid="uid://dfcrobx7wxy0t" path="res://overlay_bars.tscn" id="2_m6x2g"]
 [ext_resource type="Script" path="res://Sprite2D.gd" id="3_dlk0p"]
@@ -29,6 +30,16 @@ size = Vector2(10, 134)
 script = ExtResource("1_7g10w")
 
 [node name="OverlayBars" parent="." instance=ExtResource("2_m6x2g")]
+
+[node name="DiaryCanvas" type="CanvasLayer" parent="."]
+offset = Vector2(123, 123.435)
+transform = Transform2D(1, 0, 0, 1, 123, 123.435)
+
+[node name="Dia_UI" parent="DiaryCanvas" instance=ExtResource("2_di8bu")]
+offset_left = -136.0
+offset_top = -76.5
+offset_right = -136.0
+offset_bottom = -76.5
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

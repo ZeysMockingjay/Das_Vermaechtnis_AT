@@ -1,11 +1,10 @@
-[gd_scene load_steps=24 format=3 uid="uid://w2plgveuwqqq"]
+[gd_scene load_steps=23 format=3 uid="uid://w2plgveuwqqq"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_r35pd"]
 [ext_resource type="Script" path="res://Camera2D.gd" id="2_7543w"]
 [ext_resource type="Resource" uid="uid://dq0uula46bdp3" path="res://Assets/diary/playerdia.tres" id="2_kk215"]
 [ext_resource type="Texture2D" uid="uid://dcoegsn3uwx4" path="res://Assets/Textures/Character Animation/Spritesheet_Test.png" id="3_8bc7e"]
 [ext_resource type="Texture2D" uid="uid://bd7bgk8sfqn2k" path="res://Assets/Textures/Character Animation/Walk_Spritesheet_Test.png" id="4_0wnrw"]
-[ext_resource type="PackedScene" uid="uid://cxn013q0crjfk" path="res://Assets/diary/dia_ui.tscn" id="6_n6480"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o4ubc"]
 size = Vector2(16, 50)
@@ -159,5 +158,3 @@ sprite_frames = SubResource("SpriteFrames_tmkp3")
 animation = &"run"
 autoplay = "idle"
 flip_h = true
-
-[node name="Dia_UI" parent="Player" instance=ExtResource("6_n6480")]
