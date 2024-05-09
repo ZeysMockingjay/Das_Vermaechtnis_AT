@@ -17,3 +17,4 @@ texture = ExtResource("1_hv17x")
 centered = false
 
 [node name="clue_display" type="Sprite2D" parent="."]
+position = Vector2(18, 12)
