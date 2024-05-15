@@ -4,15 +4,15 @@
 [ext_resource type="Texture2D" uid="uid://2rwt4dtlxpv0" path="res://Assets/Textures/diary/Diary_slot.png" id="1_hv17x"]
 
 [node name="dia_UI_slot" type="Panel"]
-custom_minimum_size = Vector2(84, 60)
+custom_minimum_size = Vector2(40, 25)
 offset_left = 96.0
 offset_top = 44.0
-offset_right = 180.0
-offset_bottom = 104.0
+offset_right = 133.415
+offset_bottom = 63.655
 script = ExtResource("1_csq0d")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-96, -44)
+scale = Vector2(0.129, 0.216)
 texture = ExtResource("1_hv17x")
 centered = false
 

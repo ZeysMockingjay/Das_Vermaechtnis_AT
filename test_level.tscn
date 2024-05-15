@@ -29,9 +29,8 @@ size = Vector2(10, 134)
 [node name="Welt1" type="Node2D"]
 script = ExtResource("1_7g10w")
 
-[node name="OverlayBars" parent="." instance=ExtResource("2_m6x2g")]
-
 [node name="DiaryCanvas" type="CanvasLayer" parent="."]
+layer = 3
 offset = Vector2(123, 123.435)
 transform = Transform2D(1, 0, 0, 1, 123, 123.435)
 
@@ -40,6 +39,9 @@ offset_left = -136.0
 offset_top = -76.5
 offset_right = -136.0
 offset_bottom = -76.5
+
+[node name="OverlayBars" parent="." instance=ExtResource("2_m6x2g")]
+layer = 2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

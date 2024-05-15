@@ -45,11 +45,6 @@ scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_q6ifp")
 centered = false
 
-[node name="Column" type="Sprite2D" parent="ParallaxBackground"]
-position = Vector2(150, 25)
-texture = ExtResource("5_apw2g")
-centered = false
-
 [node name="Portal" type="Area2D" parent="."]
 script = ExtResource("4_hdnt5")
 
@@ -77,5 +72,12 @@ destination_door_tag = "1"
 
 [node name="CollisionShape2D" parent="Doors (OBSOLID)/Door_2" index="0"]
 position = Vector2(291, 108)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Column" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(151, 17)
+texture = ExtResource("5_apw2g")
+centered = false
 
 [editable path="Doors (OBSOLID)/Door_2"]
