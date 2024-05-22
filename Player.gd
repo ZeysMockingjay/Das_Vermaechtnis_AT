@@ -43,3 +43,6 @@ func _physics_process(delta: float) -> void:
 			
 func collect(clue):
 	dia.insert(clue)
+	
+func player():
+	pass

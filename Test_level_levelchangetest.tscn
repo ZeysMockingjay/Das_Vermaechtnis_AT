@@ -5,8 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://u4orlfs307q2" path="res://Screenshot 2024-04-28 182948.png" id="2_q6ifp"]
 [ext_resource type="PackedScene" uid="uid://w2plgveuwqqq" path="res://player_1.tscn" id="4_a0djx"]
 [ext_resource type="Script" path="res://Portal_lvl2_1.gd" id="4_hdnt5"]
-[ext_resource type="Texture2D" uid="uid://dqddv085v6bgl" path="res://Assets/Textures/LevelDesignTextures/column_debug.png" id="5_apw2g"]
 [ext_resource type="PackedScene" uid="uid://bj6laiw1fnqdq" path="res://door.tscn" id="5_d367d"]
+[ext_resource type="PackedScene" uid="uid://cxvaewxiasfhw" path="res://säule.tscn" id="7_y2ydp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dscnd"]
 size = Vector2(1000, 12)
@@ -73,11 +73,7 @@ destination_door_tag = "1"
 [node name="CollisionShape2D" parent="Doors (OBSOLID)/Door_2" index="0"]
 position = Vector2(291, 108)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="Column" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(151, 17)
-texture = ExtResource("5_apw2g")
-centered = false
+[node name="Säule" parent="." instance=ExtResource("7_y2ydp")]
+position = Vector2(207, 123)
 
 [editable path="Doors (OBSOLID)/Door_2"]

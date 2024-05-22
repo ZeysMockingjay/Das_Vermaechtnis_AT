@@ -10,3 +10,6 @@ res://Assets/diary/diary.gd
 res://Assets/diary/dia_ui_slot.gd
 res://Assets/diary/playerdia.tres
 res://Player.gd
+res://säule.tscn
+res://säule.gd
+res://Assets/diary/Dia_UI.gd

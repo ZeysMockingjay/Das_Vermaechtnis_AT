@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3 uid="uid://cxvaewxiasfhw"]
+
+[ext_resource type="Script" path="res://säule.gd" id="1_di4oh"]
+[ext_resource type="Texture2D" uid="uid://jn3dotilcj20" path="res://Assets/Textures/Clueprototype.png" id="1_mjt50"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i22cp"]
+atlas = ExtResource("1_mjt50")
+region = Rect2(180, 0, 90, 116)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hdqlk"]
+atlas = ExtResource("1_mjt50")
+region = Rect2(180, 0, 90, 116)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_da4lq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i22cp")
+}],
+"loop": true,
+"name": &"Clue_empty",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hdqlk")
+}],
+"loop": true,
+"name": &"Clue_full",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wv57j"]
+size = Vector2(27, 30)
+
+[node name="Säule" type="Node2D"]
+script = ExtResource("1_di4oh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, -14)
+scale = Vector2(0.422222, 0.422222)
+sprite_frames = SubResource("SpriteFrames_da4lq")
+animation = &"Clue_full"
+
+[node name="pickable_area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pickable_area"]
+position = Vector2(-0.5, -5)
+shape = SubResource("RectangleShape2D_wv57j")
+
+[connection signal="body_entered" from="pickable_area" to="." method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="pickable_area" to="." method="_on_pickable_area_body_exited"]
