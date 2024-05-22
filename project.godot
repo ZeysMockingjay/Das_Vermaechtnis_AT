@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Das_Vermaechtnis_AT"
+config/version="V0.2"
 run/main_scene="res://test_level.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"

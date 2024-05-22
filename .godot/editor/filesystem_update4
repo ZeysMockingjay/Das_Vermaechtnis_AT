@@ -1,14 +1,10 @@
-res://Assets/diary/dia_ui_slot.tscn
-res://Assets/diary/playerdia.tres
 res://test_level.tscn
-res://transition_screen.tscn
+res://Assets/diary/playerdia.tres
 res://Test_level_levelchangetest.tscn
+res://transition_screen.tscn
 res://player_1.tscn
 res://overlay_bars.tscn
 res://Assets/diary/dia_ui.tscn
+res://Assets/diary/dia_ui_slot.tscn
 res://säule.tscn
 res://clue_collectable.tscn
-res://Assets/diary/dia_ui_slot.gd
-res://Assets/diary/Dia_UI.gd
-res://Assets/diary/diary.gd
-res://test_level.gd

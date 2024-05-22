@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://ce0lppgrmebt4"]
+[gd_scene load_steps=15 format=3 uid="uid://ce0lppgrmebt4"]
 
 [ext_resource type="PackedScene" uid="uid://dfcrobx7wxy0t" path="res://overlay_bars.tscn" id="1_2fg7j"]
 [ext_resource type="Texture2D" uid="uid://l5wg4fc606bh" path="res://Assets/Textures/Boden.png" id="1_15c8h"]
@@ -7,7 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://w2plgveuwqqq" path="res://player_1.tscn" id="4_a0djx"]
 [ext_resource type="Script" path="res://Portal_lvl2_1.gd" id="4_hdnt5"]
 [ext_resource type="PackedScene" uid="uid://bj6laiw1fnqdq" path="res://door.tscn" id="5_d367d"]
+[ext_resource type="Texture2D" uid="uid://cp163fak1hlej" path="res://Assets/Textures/Door_Debug.png" id="7_s1b1a"]
 [ext_resource type="PackedScene" uid="uid://cxvaewxiasfhw" path="res://säule.tscn" id="7_y2ydp"]
+[ext_resource type="Texture2D" uid="uid://bf3mnp53ncajr" path="res://Assets/Textures/Controls_Debug.png" id="10_7qeru"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dscnd"]
 size = Vector2(1000, 12)
@@ -64,6 +66,10 @@ script = ExtResource("4_hdnt5")
 position = Vector2(127, 109)
 shape = SubResource("RectangleShape2D_m81ho")
 
+[node name="Sprite2D" type="Sprite2D" parent="Portal/CollisionShape2D"]
+position = Vector2(6, -33)
+texture = ExtResource("7_s1b1a")
+
 [node name="MapEnde" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="MapEnde"]
@@ -87,5 +93,10 @@ position = Vector2(291, 108)
 
 [node name="Säule" parent="." instance=ExtResource("7_y2ydp")]
 position = Vector2(207, 123)
+
+[node name="Controls" type="Sprite2D" parent="."]
+position = Vector2(90, 60)
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("10_7qeru")
 
 [editable path="Doors (OBSOLID)/Door_2"]

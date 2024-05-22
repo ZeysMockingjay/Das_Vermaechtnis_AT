@@ -1,5 +1,5 @@
-Marker2D
 Sprite2D
+Marker2D
 StaticBody2D
 CollisionShape2D
 Area2D
@@ -12,4 +12,3 @@ GridMap
 Panel
 TextureRect
 ColorRect
-Node
