@@ -16,6 +16,7 @@ func _process(delta):
 			if Input.is_action_just_pressed("e"):
 				state = "excluding_clue"
 				$AnimatedSprite2D.play("Clue_empty")
+				drop_clue()
 				
 				
 
