@@ -31,3 +31,7 @@ func _on_pickable_area_body_exited(body):
 func drop_clue():
 	var clue_instance = clue.instantiate()
 	clue_instance.global_position = $Marker2D.global_position
+	get_parent().add_child(clue_instance)
+	
+	await get_tree().create_timer(3).timeout
+	
