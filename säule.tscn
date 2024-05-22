@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://cxvaewxiasfhw"]
+[gd_scene load_steps=8 format=3 uid="uid://cxvaewxiasfhw"]
 
 [ext_resource type="Script" path="res://säule.gd" id="1_di4oh"]
 [ext_resource type="Texture2D" uid="uid://jn3dotilcj20" path="res://Assets/Textures/Clueprototype.png" id="1_mjt50"]
+[ext_resource type="Resource" uid="uid://b1msjs2bcylwh" path="res://Assets/diary/hints/column_hint.tres" id="2_ssrc2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i22cp"]
 atlas = ExtResource("1_mjt50")
@@ -35,6 +36,7 @@ size = Vector2(27, 30)
 
 [node name="Säule" type="Node2D"]
 script = ExtResource("1_di4oh")
+item = ExtResource("2_ssrc2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(2, -14)

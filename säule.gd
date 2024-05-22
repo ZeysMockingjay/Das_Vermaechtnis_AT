@@ -5,6 +5,8 @@ extends Node2D
 var state = "including_clue"
 var player_in_area = false
 var clue = preload("res://clue_collectable.tscn")
+@export var item: DiaItem
+var player = null
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -24,6 +26,7 @@ func _process(delta):
 func _on_pickable_area_body_entered(body):
 	if body.has_method("player"):
 		player_in_area = true
+		player = body
 
 func _on_pickable_area_body_exited(body):
 	if body.has_method("player"):
@@ -33,6 +36,6 @@ func drop_clue():
 	var clue_instance = clue.instantiate()
 	clue_instance.global_position = $Marker2D.global_position
 	get_parent().add_child(clue_instance)
-	
+	player.collect(item)
 	await get_tree().create_timer(3).timeout
 	

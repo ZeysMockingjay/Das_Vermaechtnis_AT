@@ -41,8 +41,11 @@ func _physics_process(delta: float) -> void:
 		else:
 			animated_sprite.play("run")  # Play running animation if moving horizontally
 			
-func collect(clue):
-	dia.insert(clue)
-	
 func player():
-	pass
+	pass			
+
+func collect(clue): #VIELLEICHT item STATT clue
+	dia.insert(clue) #VIELLEICHT item STATT clue
+	
+
+	
