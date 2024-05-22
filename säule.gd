@@ -4,7 +4,7 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 var state = "including_clue"
 var player_in_area = false
-
+var clue = preload("res://clue_collectable.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -27,3 +27,7 @@ func _on_pickable_area_body_entered(body):
 func _on_pickable_area_body_exited(body):
 	if body.has_method("player"):
 		player_in_area = false
+		
+func drop_clue():
+	var clue_instance = clue.instantiate()
+	clue_instance.global_position = $Marker2D.global_position
