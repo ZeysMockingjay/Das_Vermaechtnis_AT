@@ -40,3 +40,6 @@ func _physics_process(delta: float) -> void:
 			animated_sprite.play("idle")  # Play idle animation if there's no effective horizontal movement or if stuck on a wall
 		else:
 			animated_sprite.play("run")  # Play running animation if moving horizontally
+			
+func collect(clue):
+	dia.insert(clue)
