@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dourcstbvbpla"]
+
+[ext_resource type="PackedScene" uid="uid://w2plgveuwqqq" path="res://player_1.tscn" id="1_m4j2f"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_top = 124.0
+offset_right = 272.0
+offset_bottom = 153.0
+
+[node name="Player1" parent="." instance=ExtResource("1_m4j2f")]
+position = Vector2(-74.185, 0)

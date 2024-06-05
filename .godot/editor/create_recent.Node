@@ -1,3 +1,6 @@
+ColorRect
+AnimationPlayer
+Node
 Sprite2D
 Marker2D
 StaticBody2D
@@ -10,5 +13,3 @@ CanvasLayer
 GridContainer
 GridMap
 Panel
-TextureRect
-ColorRect

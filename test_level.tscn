@@ -63,7 +63,7 @@ script = ExtResource("3_dlk0p")
 [node name="Sprite2D" type="Sprite2D" parent="Background"]
 texture = ExtResource("4_nt36v")
 centered = false
-offset = Vector2(0, 18)
+offset = Vector2(-2.57, 18)
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Background"]
 motion_scale = Vector2(0.6, 1)
@@ -93,7 +93,7 @@ centered = false
 offset = Vector2(0, 18)
 
 [node name="Player1" parent="." instance=ExtResource("11_2k80p")]
-position = Vector2(-48, 1)
+position = Vector2(-30.96, 1)
 
 [node name="Boden" type="StaticBody2D" parent="."]
 position = Vector2(500, 191)
@@ -109,7 +109,7 @@ shape = SubResource("RectangleShape2D_h3213")
 script = ExtResource("13_da3h6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
-position = Vector2(98, 103)
+position = Vector2(183.77, 103)
 shape = SubResource("RectangleShape2D_gcaqk")
 
 [node name="Sprite2D" type="Sprite2D" parent="Portal/CollisionShape2D"]
@@ -119,12 +119,12 @@ texture = ExtResource("13_go7y8")
 [node name="MapEnde" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="MapEnde"]
-position = Vector2(785, 88)
+position = Vector2(740, 88)
 rotation = -3.14159
 shape = SubResource("RectangleShape2D_jwd2t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MapEnde"]
-position = Vector2(-6, 67)
+position = Vector2(-5, 67)
 shape = SubResource("RectangleShape2D_4o1sg")
 
 [node name="Doors (OBSOLID)" type="Node" parent="."]
