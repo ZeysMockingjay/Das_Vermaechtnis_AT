@@ -44,9 +44,12 @@ tracks/1/path = NodePath("Node2D")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
-"values": []
+"times": PackedFloat32Array(2.4),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [null],
+"method": &"play_anim"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_fse37"]
@@ -115,4 +118,4 @@ script = ExtResource("1_2xjlj")
 position = Vector2(35, 55)
 sprite_frames = SubResource("SpriteFrames_jyay8")
 animation = &"Bike"
-frame_progress = 0.0563281
+frame_progress = 0.224131
