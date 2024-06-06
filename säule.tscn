@@ -8,9 +8,9 @@
 atlas = ExtResource("1_mjt50")
 region = Rect2(180, 0, 90, 116)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_hdqlk"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_52vbd"]
 atlas = ExtResource("1_mjt50")
-region = Rect2(180, 0, 90, 116)
+region = Rect2(90, 0, 90, 116)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_da4lq"]
 animations = [{
@@ -24,7 +24,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_hdqlk")
+"texture": SubResource("AtlasTexture_52vbd")
 }],
 "loop": true,
 "name": &"Clue_full",
