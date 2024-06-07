@@ -4,10 +4,10 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	animation_player.connect("animation_finished", Callable(self, "_on_animation_finished"))
 
-
-
-func _physics_process(_delta: float) -> void:
-		await Cutscene1_Intro_Anim.on_animation_finished
+func _on_animation_finished(anim_name: String):
+	print ("HUSO")
+	if anim_name == "Cutscene1_Intro_Anim":
+		print ("GUNGINGAN")
 		get_tree().change_scene_to_file("res://test_level.tscn")

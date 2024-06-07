@@ -97,4 +97,4 @@ position = Vector2(35, 55)
 sprite_frames = SubResource("SpriteFrames_jyay8")
 animation = &"Bike"
 autoplay = "Bike"
-frame_progress = 0.309929
+frame_progress = 0.229058
