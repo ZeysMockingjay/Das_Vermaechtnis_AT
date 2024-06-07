@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://dourcstbvbpla"]
+[gd_scene load_steps=11 format=3 uid="uid://dourcstbvbpla"]
 
 [ext_resource type="Script" path="res://Node2D.gd" id="1_2xjlj"]
+[ext_resource type="Script" path="res://Beginning_Animation.gd" id="1_4xjhn"]
 [ext_resource type="Texture2D" uid="uid://bvact8y61g5xq" path="res://Assets/Textures/Character Animation/Cutscenes/Cutscene1_Intro/Animationtestsprite.png" id="2_66fhx"]
 
 [sub_resource type="Animation" id="Animation_co7xs"]
@@ -75,11 +76,13 @@ animations = [{
 }]
 
 [node name="AnimationPlayerNode" type="Node2D"]
+script = ExtResource("1_4xjhn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_luqtw")
 }
+autoplay = "Cutscene1_Intro_Anim"
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_top = 124.0
@@ -94,4 +97,4 @@ position = Vector2(35, 55)
 sprite_frames = SubResource("SpriteFrames_jyay8")
 animation = &"Bike"
 autoplay = "Bike"
-frame_progress = 0.866111
+frame_progress = 0.309929
