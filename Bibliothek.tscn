@@ -1,0 +1,71 @@
+[gd_scene load_steps=11 format=3 uid="uid://bwnbyuoidisl0"]
+
+[ext_resource type="PackedScene" uid="uid://cxn013q0crjfk" path="res://Assets/diary/dia_ui.tscn" id="1_83fno"]
+[ext_resource type="PackedScene" uid="uid://dfcrobx7wxy0t" path="res://overlay_bars.tscn" id="2_wa31q"]
+[ext_resource type="PackedScene" uid="uid://w2plgveuwqqq" path="res://player_1.tscn" id="3_be20x"]
+[ext_resource type="Texture2D" uid="uid://l5wg4fc606bh" path="res://Assets/Textures/Boden.png" id="4_2jtuv"]
+[ext_resource type="Script" path="res://Portal_lvl2_1.gd" id="6_li760"]
+[ext_resource type="Texture2D" uid="uid://cp163fak1hlej" path="res://Assets/Textures/Door_Debug.png" id="7_m67xk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ctr1"]
+size = Vector2(1000, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uqoqa"]
+size = Vector2(25, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_desne"]
+size = Vector2(11, 91)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0iqmy"]
+size = Vector2(10, 134)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="DiaryCanvas" type="CanvasLayer" parent="."]
+layer = 3
+offset = Vector2(123, 123.435)
+transform = Transform2D(1, 0, 0, 1, 123, 123.435)
+
+[node name="Dia_UI" parent="DiaryCanvas" instance=ExtResource("1_83fno")]
+offset_left = -136.0
+offset_top = -76.5
+offset_right = -136.0
+offset_bottom = -76.5
+metadata/_edit_use_anchors_ = true
+
+[node name="OverlayBars" parent="." instance=ExtResource("2_wa31q")]
+
+[node name="Player1" parent="." instance=ExtResource("3_be20x")]
+position = Vector2(1, 3)
+
+[node name="Boden" type="StaticBody2D" parent="."]
+position = Vector2(500, 191)
+
+[node name="Texture_Sprite" type="Sprite2D" parent="Boden"]
+texture = ExtResource("4_2jtuv")
+
+[node name="Collision" type="CollisionShape2D" parent="Boden"]
+position = Vector2(0, -52)
+shape = SubResource("RectangleShape2D_5ctr1")
+
+[node name="Portal" type="Area2D" parent="."]
+script = ExtResource("6_li760")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
+position = Vector2(127, 109)
+shape = SubResource("RectangleShape2D_uqoqa")
+
+[node name="Sprite2D" type="Sprite2D" parent="Portal/CollisionShape2D"]
+position = Vector2(6, -33)
+texture = ExtResource("7_m67xk")
+
+[node name="MapEnde" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="MapEnde"]
+position = Vector2(403, 88)
+rotation = -3.14159
+shape = SubResource("RectangleShape2D_desne")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapEnde"]
+position = Vector2(-6, 67)
+shape = SubResource("RectangleShape2D_0iqmy")

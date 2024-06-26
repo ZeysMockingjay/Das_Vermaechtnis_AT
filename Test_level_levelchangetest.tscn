@@ -34,6 +34,7 @@ offset_left = -136.0
 offset_top = -76.5
 offset_right = -136.0
 offset_bottom = -76.5
+metadata/_edit_use_anchors_ = true
 
 [node name="OverlayBars" parent="." instance=ExtResource("1_2fg7j")]
 
