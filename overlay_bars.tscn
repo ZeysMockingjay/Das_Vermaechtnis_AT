@@ -28,11 +28,11 @@ func _process(delta):
 layer = 10
 
 [node name="OverlayImage2" type="Sprite2D" parent="."]
+visible = false
 texture = ExtResource("1_unols")
 centered = false
 
 [node name="OverlayImageFull2" type="Sprite2D" parent="."]
-visible = false
 texture = ExtResource("2_r85se")
 centered = false
 script = SubResource("GDScript_i8nt4")
