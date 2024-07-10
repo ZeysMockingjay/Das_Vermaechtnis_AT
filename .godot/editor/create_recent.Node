@@ -1,3 +1,5 @@
+HBoxContainer
+VBoxContainer
 Area2D
 ColorRect
 CanvasModulate
@@ -11,4 +13,3 @@ Node
 Marker2D
 StaticBody2D
 Label
-GridContainer
