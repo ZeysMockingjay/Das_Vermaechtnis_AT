@@ -14,21 +14,20 @@ func _ready() -> void:
 func _on_Area2D_body_entered(body: Node) -> void:
 	if body is CharacterBody2D:
 		entered = true
+		print("Player entered the area")
 
 func _on_Area2D_body_exited(body: Node) -> void:
 	if body is CharacterBody2D:
 		entered = false
+		print("Player exited the area")
 
-func _physics_process(_delta: float) -> void:
-	if entered and Input.is_action_just_pressed("e"):
+func _unhandled_input(event: InputEvent) -> void:
+	if entered and event.is_action_pressed("e"):
+		print("E key pressed while in area")
 		open_bib_regalview()
 
 func open_bib_regalview() -> void:
-	TransitionScreen.transition()
-	await TransitionScreen.on_animation_finished
-	
+	print("Attempting to open Bib_Regalview")
 	var bib_regalview_instance = bib_regalview_scene.instantiate()
-	
-	var canvas_layer = CanvasLayer.new()
-	get_tree().root.add_child(canvas_layer)
-	canvas_layer.add_child(bib_regalview_instance)
+	get_tree().root.add_child(bib_regalview_instance)
+	print("Bib_Regalview opened")
