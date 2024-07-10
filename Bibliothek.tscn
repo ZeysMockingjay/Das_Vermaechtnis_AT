@@ -1,11 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://bwnbyuoidisl0"]
+[gd_scene load_steps=15 format=3 uid="uid://bwnbyuoidisl0"]
 
 [ext_resource type="PackedScene" uid="uid://cxn013q0crjfk" path="res://Assets/diary/dia_ui.tscn" id="1_83fno"]
 [ext_resource type="PackedScene" uid="uid://dfcrobx7wxy0t" path="res://overlay_bars.tscn" id="2_wa31q"]
 [ext_resource type="PackedScene" uid="uid://w2plgveuwqqq" path="res://player_1.tscn" id="3_be20x"]
 [ext_resource type="Texture2D" uid="uid://l5wg4fc606bh" path="res://Assets/Textures/Boden.png" id="4_2jtuv"]
 [ext_resource type="Script" path="res://Portal_lvl2_1.gd" id="6_li760"]
+[ext_resource type="Texture2D" uid="uid://dfljwme1i0xej" path="res://Assets/Textures/Shelf.png" id="7_71xny"]
 [ext_resource type="Texture2D" uid="uid://cp163fak1hlej" path="res://Assets/Textures/Door_Debug.png" id="7_m67xk"]
+[ext_resource type="Script" path="res://Bücherregalskript.gd" id="7_sgnhu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ctr1"]
 size = Vector2(1000, 12)
@@ -18,6 +20,12 @@ size = Vector2(11, 91)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0iqmy"]
 size = Vector2(10, 134)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fkjib"]
+size = Vector2(25, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f7frd"]
+size = Vector2(102, 72)
 
 [node name="Node2D" type="Node2D"]
 
@@ -69,3 +77,20 @@ shape = SubResource("RectangleShape2D_desne")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MapEnde"]
 position = Vector2(-6, 67)
 shape = SubResource("RectangleShape2D_0iqmy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(127, 109)
+shape = SubResource("RectangleShape2D_fkjib")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+position = Vector2(6, -33)
+texture = ExtResource("7_m67xk")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(279, 96)
+shape = SubResource("RectangleShape2D_f7frd")
+script = ExtResource("7_sgnhu")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D2"]
+position = Vector2(-10, -21)
+texture = ExtResource("7_71xny")

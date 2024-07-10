@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cf36hr8rhmbdo"]
+[gd_scene load_steps=20 format=3 uid="uid://cf36hr8rhmbdo"]
 
 [ext_resource type="Script" path="res://test_level.gd" id="1_7g10w"]
 [ext_resource type="PackedScene" uid="uid://cxn013q0crjfk" path="res://Assets/diary/dia_ui.tscn" id="2_di8bu"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://w2plgveuwqqq" path="res://player_1.tscn" id="11_2k80p"]
 [ext_resource type="Script" path="res://Portal_lvl1_1.gd" id="13_da3h6"]
 [ext_resource type="Texture2D" uid="uid://cp163fak1hlej" path="res://Assets/Textures/Door_Debug.png" id="13_go7y8"]
+[ext_resource type="Script" path="res://Portalschriptbib.gd" id="15_o25lj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h3213"]
 size = Vector2(1000, 12)
@@ -104,8 +105,20 @@ texture = ExtResource("9_m78ck")
 position = Vector2(0, -52)
 shape = SubResource("RectangleShape2D_h3213")
 
-[node name="Portal" type="Area2D" parent="."]
+[node name="Portal2" type="Area2D" parent="."]
+position = Vector2(40.72, 0)
 script = ExtResource("13_da3h6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal2"]
+position = Vector2(183.77, 103)
+shape = SubResource("RectangleShape2D_gcaqk")
+
+[node name="Sprite2D" type="Sprite2D" parent="Portal2/CollisionShape2D"]
+position = Vector2(6, -28)
+texture = ExtResource("13_go7y8")
+
+[node name="Portal" type="Area2D" parent="."]
+script = ExtResource("15_o25lj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
 position = Vector2(183.77, 103)
@@ -126,5 +139,7 @@ shape = SubResource("RectangleShape2D_jwd2t")
 position = Vector2(-5, 67)
 shape = SubResource("RectangleShape2D_4o1sg")
 
+[connection signal="body_entered" from="Portal2" to="Portal2" method="_on_body_entered"]
+[connection signal="body_exited" from="Portal2" to="Portal2" method="_on_body_exited"]
 [connection signal="body_entered" from="Portal" to="Portal" method="_on_body_entered"]
 [connection signal="body_exited" from="Portal" to="Portal" method="_on_body_exited"]
