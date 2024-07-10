@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720646617
+::res://::1720647099
 Beginning_Animation.gd::GDScript::-1::1717769352::0::1::::<>Node2D<>::
 Beginning_Animation.tscn::PackedScene::8184230152402933738::1720644914::0::1::::<><>::res://Node2D.gd<>res://Beginning_Animation.gd<>uid://bvact8y61g5xq::::res://Assets/Textures/Character Animation/Cutscenes/Cutscene1_Intro/Animationtestsprite.png<>uid://batauwvmxhfbi::::res://Assets/Textures/Character Animation/Cutscenes/Cutscene1_Intro/Title.png
 Bibliothek.tscn::PackedScene::3957516803041167303::1720644914::0::1::::<><>::uid://cxn013q0crjfk::::res://Assets/diary/dia_ui.tscn<>uid://dfcrobx7wxy0t::::res://overlay_bars.tscn<>uid://w2plgveuwqqq::::res://player_1.tscn<>uid://l5wg4fc606bh::::res://Assets/Textures/Boden.png<>res://Portal_lvl2_1.gd<>uid://dfljwme1i0xej::::res://Assets/Textures/Shelf.png<>uid://cp163fak1hlej::::res://Assets/Textures/Door_Debug.png<>res://Bücherregalskript.gd
-Bib_Regalview.tscn::PackedScene::340564408919398221::1720646617::0::1::::<><>::
+Bib_Regalview.tscn::PackedScene::340564408919398221::1720647099::0::1::::<><>::
 Bücherregalskript.gd::GDScript::-1::1720644913::0::1::::<>Node2D<>::
 Camera2D.gd::GDScript::-1::1714316819::0::1::::<>Camera2D<>::
 clue_collectable.gd::GDScript::-1::1716384789::0::1::::<>StaticBody2D<>::
@@ -32,9 +32,19 @@ transition_screen.gd::GDScript::-1::1715093923::0::1::::<>CanvasLayer<>::
 transition_screen.tscn::PackedScene::6141301288364336912::1720644914::0::1::::<><>::res://transition_screen.gd
 ::res://Assets/::1720646650
 door.tscn::PackedScene::4799696106613712833::1714698115::0::1::::<><>::
-::res://Assets/books/::1720646695
-::res://Assets/books/book1/::1720646686
-::res://Assets/books/book2/::1720646695
+::res://Assets/books/::1720646701
+::res://Assets/books/book1/::1720647145
+page1.png::CompressedTexture2D::5868650538809263817::1720647145::1720647141::1::::<><>::
+page2.png::CompressedTexture2D::5308346309549581851::1720647145::1720647141::1::::<><>::
+page3.png::CompressedTexture2D::6635156884703312835::1720647145::1720647141::1::::<><>::
+::res://Assets/books/book2/::1720647152
+page1.png::CompressedTexture2D::3823541758369637836::1720647152::1720647152::1::::<><>::
+page2.png::CompressedTexture2D::1528046745452228477::1720647152::1720647152::1::::<><>::
+page3.png::CompressedTexture2D::4524148497095995055::1720647152::1720647152::1::::<><>::
+::res://Assets/books/book3/::1720647158
+page1.png::CompressedTexture2D::8980065245385111050::1720647158::1720647159::1::::<><>::
+page2.png::CompressedTexture2D::691998519029175329::1720647158::1720647159::1::::<><>::
+page3.png::CompressedTexture2D::8577341634153440549::1720647158::1720647159::1::::<><>::
 ::res://Assets/diary/::1720644914
 diary.gd::GDScript::-1::1716387782::0::1::::Dia<>Resource<>::
 diary_item.gd::GDScript::-1::1715199032::0::1::::DiaItem<>Resource<>::
