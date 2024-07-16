@@ -1,3 +1,5 @@
+Button
+TextureRect
 HBoxContainer
 VBoxContainer
 Area2D
@@ -10,6 +12,3 @@ Node2D
 AnimatedSprite2D
 AnimationPlayer
 Node
-Marker2D
-StaticBody2D
-Label

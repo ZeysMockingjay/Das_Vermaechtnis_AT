@@ -1,7 +1,8 @@
-res://test_level.tscn
-res://Assets/diary/playerdia.tres
-res://Beginning_Animation.tscn
 res://Bibliothek.tscn
+res://Assets/diary/playerdia.tres
+res://Bib_Regalview.tscn
+res://Beginning_Animation.tscn
+res://test_level.tscn
 res://Test_level_levelchangetest.tscn
 res://transition_screen.tscn
 res://player_1.tscn
@@ -10,6 +11,7 @@ res://Assets/diary/dia_ui.tscn
 res://Assets/diary/dia_ui_slot.tscn
 res://säule.tscn
 res://clue_collectable.tscn
-res://Bib_Regalview.tscn
 res://Bücherregalskript.gd
+res://BookView.gd
 res://Portal_lvl2_1.gd
+res://Portalschriptbib.gd

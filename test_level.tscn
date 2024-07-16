@@ -1,6 +1,5 @@
-[gd_scene load_steps=20 format=3 uid="uid://cf36hr8rhmbdo"]
+[gd_scene load_steps=19 format=3 uid="uid://cf36hr8rhmbdo"]
 
-[ext_resource type="Script" path="res://test_level.gd" id="1_7g10w"]
 [ext_resource type="PackedScene" uid="uid://cxn013q0crjfk" path="res://Assets/diary/dia_ui.tscn" id="2_di8bu"]
 [ext_resource type="Texture2D" uid="uid://rtqqxm2o3sv4" path="res://Assets/Textures/Guidance.png" id="2_eacld"]
 [ext_resource type="PackedScene" uid="uid://dfcrobx7wxy0t" path="res://overlay_bars.tscn" id="2_m6x2g"]
@@ -29,7 +28,6 @@ size = Vector2(11, 91)
 size = Vector2(10, 134)
 
 [node name="Welt1" type="Node2D"]
-script = ExtResource("1_7g10w")
 
 [node name="DiaryCanvas" type="CanvasLayer" parent="."]
 layer = 3

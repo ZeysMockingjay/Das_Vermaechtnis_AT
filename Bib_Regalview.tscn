@@ -1,11 +1,72 @@
-[gd_scene format=3 uid="uid://e38btiiytft2"]
+[gd_scene load_steps=2 format=3 uid="uid://e38btiiytft2"]
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[ext_resource type="Script" path="res://BookView.gd" id="1_jyuo5"]
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="CanvasLayerBook" type="CanvasLayer"]
+visible = false
+script = ExtResource("1_jyuo5")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = 45.0
+offset_right = 400.09
+offset_bottom = 107.515
+scale = Vector2(0.68, 0.68)
+expand_mode = 1
+stretch_mode = 3
+
+[node name="BookList" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -19.5
+offset_right = 35.0
+offset_bottom = 19.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Book1" type="Button" parent="BookList"]
+layout_mode = 2
+
+[node name="Book2" type="Button" parent="BookList"]
+layout_mode = 2
+
+[node name="Book3" type="Button" parent="BookList"]
+layout_mode = 2
+
+[node name="ReaderView" type="HBoxContainer" parent="."]
+offset_left = 5.0
+offset_top = 63.0
+offset_right = 645.0
+offset_bottom = 103.0
+scale = Vector2(0.425, 0.425)
+pivot_offset = Vector2(-8.245, -0.025)
+
+[node name="PrevButton" type="Button" parent="ReaderView"]
+layout_mode = 2
+text = "<"
+
+[node name="NextButton" type="Button" parent="ReaderView"]
+layout_mode = 2
+text = ">"
+
+[node name="CloseButton" type="Button" parent="."]
+offset_top = 24.0
+offset_right = 18.0
+offset_bottom = 55.0
+text = "X"
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 246.0
+offset_top = 106.0
+offset_right = 306.0
+offset_bottom = 137.0
+scale = Vector2(0.425, 0.425)
+text = "zurück"
+
+[connection signal="pressed" from="ReaderView/PrevButton" to="." method="_on_prev_button_pressed"]
+[connection signal="pressed" from="ReaderView/NextButton" to="." method="_on_next_button_pressed"]
+[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
