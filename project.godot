@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Das_Vermaechtnis_AT"
-config/version="V0.2"
-run/main_scene="res://Bibliothek.tscn"
+config/version="V0.3"
+run/main_scene="res://Beginning_Animation.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 boot_splash/minimum_display_time=3
@@ -29,6 +29,7 @@ Area2dWelt2="*res://Portal_lvl2_1.gd"
 window/size/viewport_width=272
 window/size/viewport_height=153
 window/size/mode=2
+window/size/borderless=true
 window/size/window_width_override=1920
 window/size/window_height_override=1080
 window/stretch/mode="canvas_items"
