@@ -12,8 +12,8 @@ var current_book = ""
 var current_page = 0
 var book_pages = {
 	"Book1": ["res://Assets/books/book1/page1.png", "res://Assets/books/book1/page2.png", "res://Assets/books/book1/page3.png"],
-	"Book2": ["res://Assets/books/book2/page1.png", "res://Assets/books/book2_page2.png", "res://Assets/books/book2/page3.png"],
-	"Book3": ["res://Assets/books/book3/page1.png", "res://Assets/books/book3_page2.png", "res://Assets/books/book3/page3.png"]
+	"Book2": ["res://Assets/books/book2/page1.png", "res://Assets/books/book2/page2.png", "res://Assets/books/book2/page3.png"],
+	"Book3": ["res://Assets/books/book3/page1.png", "res://Assets/books/book3/page2.png", "res://Assets/books/book3/page3.png"]
 }
 
 func _ready():

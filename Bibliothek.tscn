@@ -40,6 +40,7 @@ offset_bottom = -76.5
 metadata/_edit_use_anchors_ = true
 
 [node name="OverlayBars" parent="." instance=ExtResource("2_wa31q")]
+layer = 0
 
 [node name="Player1" parent="." instance=ExtResource("3_be20x")]
 position = Vector2(1, 3)

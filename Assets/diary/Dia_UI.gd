@@ -16,7 +16,7 @@ func update_slots():
 			slots[i].update(dia.slots[i])
 
 func _process(delta):
-	if Input.is_action_just_pressed("Space"):
+	if Input.is_action_just_pressed("diarybutton"):
 		if is_open:
 			close()
 		else:

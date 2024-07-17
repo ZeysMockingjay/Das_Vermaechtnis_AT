@@ -27,7 +27,7 @@ func _ready() -> void:
 	
 	
 func _physics_process(_delta: float) -> void:
-	if entered and Input.is_action_just_pressed("ui_accept"):
+	if entered and Input.is_action_just_pressed("e"):
 		TransitionScreen.transition()
 		await TransitionScreen.on_animation_finished
 		get_tree().change_scene_to_file("res://test_level.tscn")

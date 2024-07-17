@@ -24,8 +24,11 @@ size = Vector2(10, 134)
 
 [node name="Welt2" type="Node2D"]
 
+[node name="OverlayBars" parent="." instance=ExtResource("1_2fg7j")]
+layer = 0
+
 [node name="DiaryCanvas" type="CanvasLayer" parent="."]
-layer = 3
+layer = 0
 offset = Vector2(123, 123.435)
 transform = Transform2D(1, 0, 0, 1, 123, 123.435)
 
@@ -35,8 +38,6 @@ offset_top = -76.5
 offset_right = -136.0
 offset_bottom = -76.5
 metadata/_edit_use_anchors_ = true
-
-[node name="OverlayBars" parent="." instance=ExtResource("1_2fg7j")]
 
 [node name="Player1" parent="." instance=ExtResource("4_a0djx")]
 position = Vector2(1, 3)
